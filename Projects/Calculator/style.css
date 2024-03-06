@@ -38,6 +38,9 @@
     font-size: 27px;
     cursor: pointer;
     background-color: rgb(28, 28, 28);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+
 }
 
 .btn-big {
@@ -49,6 +52,8 @@
     font-size: 27px;
     cursor: pointer;
     background-color: rgb(28, 28, 28);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .display-screen {
@@ -78,6 +83,8 @@ input {
     padding: 12px;
     font-size: 72px;
     text-align: right;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .calulation-area {
