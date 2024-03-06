@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
