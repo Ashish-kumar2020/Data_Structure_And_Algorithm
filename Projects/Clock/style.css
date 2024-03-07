@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .stopwatch {
     display: flex;
