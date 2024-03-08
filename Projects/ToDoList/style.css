@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Task List */
+
+.list-group {
+    margin-left: 27px;
+}
+
+.list-items {
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.list-items:hover {
+    background-color: #b1b1b1;
+    border-radius: 12px;
+}
+
+.formclass {
+    width: 360px;
+    margin: 21px;
+}
+
+.today {
+    width: 20px;
+}
+
+.task-lists {
+    position: absolute;
+    left: 87px;
+}
+
+.offcanvas-body {
+    flex-grow: unset !important;
+    /* Remove flex-grow property */
+}
+
+.pos {
+    z-index: -1;
+}
+
+.addNew {
+    width: 322px;
+    height: -18px;
+    padding: 4px;
+}
+
+.auth-img {
+    width: 27px;
+}
+
+.bottom-bar {
+    position: absolute;
+    top: 720px;
+    left: 20px;
+}
+
+.login-button {
+    margin-left: 14px;
+    height: 37px;
+    padding: 5px;
+    width: 122px;
+}
