@@ -1,0 +1,10 @@
+.input-group {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    /* justify-content: center; */
+    left: 252px;
+    top: 125px;
+}
