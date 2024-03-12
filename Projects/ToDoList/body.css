@@ -8,3 +8,10 @@
     left: 252px;
     top: 125px;
 }
+
+#container {
+    position: absolute;
+    left: 250px;
+    top: 200px;
+    width: 53.5%;
+}

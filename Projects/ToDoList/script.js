@@ -19,7 +19,7 @@ function addTodo() {
 
     let li = document.createElement("li");
     li.classList = "list-group-item";
-
+    li.style.marginBottom = "12px";
     li.textContent = inputValue;
 
     unorderedTask.append(li);
