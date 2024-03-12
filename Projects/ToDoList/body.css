@@ -13,5 +13,19 @@
     position: absolute;
     left: 250px;
     top: 200px;
-    width: 53.5%;
+    width: 43.5%;
+}
+
+.deleteBtn {
+    position: absolute;
+    left: 629px;
+    top: 1px;
+    width: 120px;
+}
+
+.editBtn {
+    position: absolute;
+    left: 752px;
+    top: 1px;
+    width: 120px;
 }

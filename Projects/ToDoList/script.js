@@ -22,6 +22,20 @@ function addTodo() {
     li.style.marginBottom = "12px";
     li.textContent = inputValue;
 
+    // delete button
+    let deleteBtn = document.createElement("button");
+    deleteBtn.classList = "btn btn-danger deleteBtn";
+    deleteBtn.innerHTML = "Delete Todo";
+    deleteBtn.addEventListener("click", deleteTodo);
+
+    // edit Button
+    let editBtn = document.createElement("button");
+    editBtn.classList = "btn btn-info editBtn";
+    editBtn.innerHTML = "Edit Todo";
+    editBtn.addEventListener("click", editTodo);
+
+    li.append(deleteBtn);
+    li.append(editBtn);
     unorderedTask.append(li);
     container.appendChild(unorderedTask);
   }
@@ -30,10 +44,14 @@ function addTodo() {
   todoinputBox.value = "";
 }
 
-//  <ul class="list-group">
-//     <li class="list-group-item">An item</li>
-//     <li class="list-group-item">A second item</li>
-//     <li class="list-group-item">A third item</li>
-//     <li class="list-group-item">A fourth item</li>
-//     <li class="list-group-item">And a fifth one</li>
-//   </ul>;
+function deleteTodo() {
+  // this will return the the todo which we have to delete
+  let listItem = event.target.parentElement;
+  let unorderedTask = listItem.parentElement;
+  unorderedTask.removeChild(listItem);
+  console.log("Todo Deleted", unorderedTask);
+}
+
+function editTodo() {
+  console.log("Edit Todo");
+}
