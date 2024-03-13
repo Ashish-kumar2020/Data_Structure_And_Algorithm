@@ -1,0 +1,39 @@
+.container {
+    width: 100vw;
+    height: 100vw;
+}
+
+.formGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+}
+
+.userNameContainer,
+.userEmailContainer,
+.userPasswordContainer,
+.userConfirmPasswordContainer,
+.userContactNumberContainer {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 280px;
+    height: 20px;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #433939;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+label {
+    font-size: 19px;
+    font-weight: bold;
+}

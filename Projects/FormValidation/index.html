@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="formHeading">
+        <h4>Registration</h4>
+      </div>
+      <div class="formGroup">
+        <div class="userNameContainer">
+          <label for="UserName">Name : </label>
+          <input type="text" name="name" id="userName" placeholder="Name" />
+        </div>
+        <div class="userEmailContainer">
+          <label for="userEmail">Email : </label>
+          <input type="email" name="email" id="userEmail" placeholder="Email" />
+        </div>
+        <div class="userPasswordContainer">
+          <label for="userPassword">Password : </label>
+          <input
+            type="password"
+            name="password"
+            id="userPassword"
+            placeholder="Password"
+          />
+        </div>
+        <div class="userConfirmPasswordContainer">
+          <label for="confirmPassword">Confirm Password : </label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="ConfirmPassword"
+          />
+        </div>
+        <div class="userContactNumberContainer">
+          <label for="contactNumber">Contact Number : </label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="PhoneNumber"
+          />
+        </div>
+        <button onclick="registerDetails()">Sumbit</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
