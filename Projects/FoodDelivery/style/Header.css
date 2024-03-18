@@ -1,0 +1,26 @@
+.header {
+    border: 2px solid black;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companyLogo {
+    width: 82px;
+    margin-left: 58px;
+    cursor: pointer;
+}
+
+.sideList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    margin-right: 58px;
+}
+
+.listMenu {
+    font-size: 21px;
+    cursor: pointer;
+}
