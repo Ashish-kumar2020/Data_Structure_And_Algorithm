@@ -61,3 +61,5 @@ dataShow.addEventListener("click", () => {
 });
 
 // export default API_DATA;
+
+export { API_DATA };
