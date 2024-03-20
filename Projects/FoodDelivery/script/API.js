@@ -1,3 +1,5 @@
+const dataShow = document.querySelector("#dataShow");
+
 const API_URL =
   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.595578591654718&lng=77.33441691845655&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 const API_DATA = {
@@ -54,8 +56,8 @@ window.addEventListener("load", () => {
     });
 });
 
-function checkdata() {
+dataShow.addEventListener("click", () => {
   API_DATA.restaurants.map((ele) => console.log(ele));
-}
+});
 
 // export default API_DATA;
