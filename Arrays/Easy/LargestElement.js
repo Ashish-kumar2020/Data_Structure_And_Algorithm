@@ -8,6 +8,6 @@ const largestElement = (arr, n) => {
   return maxEle;
 };
 
-const arr = [2, 5, 1, 3, 0];
+const arr = [2, 5, 1, -30, 10];
 const n = arr.length;
 console.log(largestElement(arr, n));
