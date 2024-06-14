@@ -10,6 +10,7 @@ var maxSubArray = function (nums) {
   return max;
 };
 
+// using kadane's algorithm
 var maxSubArrayOptimal = function (nums) {
   let maxi = -Infinity;
   let sum = 0;
