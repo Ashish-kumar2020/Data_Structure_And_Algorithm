@@ -27,3 +27,45 @@ var searchRange = function (nums, target) {
   let lastOccur = lastOccurrence(nums, target);
   return [firstOccur, lastOccur];
 };
+
+var searchRangeOptimal = function (nums, target) {
+  const findFirst = (nums, target) => {
+    let low = 0;
+    let high = nums.length - 1;
+    let ans = -1;
+    while (low <= high) {
+      let mid = Math.floor((low + high) / 2);
+      if (nums[mid] === target) {
+        ans = mid;
+        high = mid - 1;
+      } else if (nums[mid] < target) {
+        low = mid + 1;
+      } else {
+        high = mid - 1;
+      }
+    }
+    return ans;
+  };
+
+  const findLast = (nums, target) => {
+    let low = 0;
+    let high = nums.length - 1;
+    let ans = -1;
+    while (low <= high) {
+      let mid = Math.floor((low + high) / 2);
+      if (nums[mid] === target) {
+        ans = mid;
+        low = mid + 1;
+      } else if (nums[mid] < target) {
+        low = mid + 1;
+      } else {
+        high = mid - 1;
+      }
+    }
+    return ans;
+  };
+
+  let firstOccur = findFirst(nums, target);
+  let lastOccur = findLast(nums, target);
+  return [firstOccur, lastOccur];
+};
