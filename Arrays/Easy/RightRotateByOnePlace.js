@@ -9,4 +9,5 @@ const RightRotateByOnePlace = (nums) => {
 };
 
 const nums = [1, 2, 3, 4];
-console.log(RightRotateByOnePlace(nums));
+// console.log(RightRotateByOnePlace(nums));
+console.log(nums.length - 1);
