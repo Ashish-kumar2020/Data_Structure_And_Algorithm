@@ -1,0 +1,1 @@
+ let currNode = this.head;
