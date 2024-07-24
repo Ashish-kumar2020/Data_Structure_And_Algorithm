@@ -156,6 +156,32 @@ class LinkedList {
     return this.head;
   }
 
+  // middle element of linked list
+  findmiddle() {
+    let slow = this.head;
+    let fast = this.head;
+    while (fast !== null && fast.next !== null) {
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+    return slow.value;
+  }
+
+  // Reverse a Linked List
+  reverseLinkedList() {
+    let curr = this.head;
+    let prev = null;
+    let temp = null;
+    while (curr != null) {
+      temp = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = temp;
+    }
+    this.head = prev;
+    return this.head;
+  }
+
   //   Print Linked List
   printLinkedList() {
     let currNode = this.head;
@@ -168,9 +194,9 @@ class LinkedList {
   }
 }
 const list = new LinkedList();
-list.converArrayToLinkedList([1, 2, 37, 4, 50]);
-console.log(list.printLinkedListLength());
-console.log(list.searchElement(1));
+list.converArrayToLinkedList([1, 2, 37, 4, 50, 44]);
+// console.log(list.printLinkedListLength());
+// console.log(list.searchElement(1));
 // list.deleteHead();
 // list.deleteHead();
 // list.deleteTail();
@@ -180,6 +206,8 @@ console.log(list.searchElement(1));
 // list.insertAtHead(10);
 // list.insertAtTail(345);
 // list.insertAtTail(3455);
-list.insertAtKPosition(2, 300);
-list.insertAtKPosition(3, 300);
+// list.insertAtKPosition(2, 300);
+// list.insertAtKPosition(3, 300);
+// console.log(list.findmiddle());
+list.reverseLinkedList();
 list.printLinkedList();
