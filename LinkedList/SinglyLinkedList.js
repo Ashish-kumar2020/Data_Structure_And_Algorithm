@@ -31,6 +31,39 @@ class LinkedList{
         this.head = newNode;
     }
 
+    // Delete a node
+    deleteNode(data){
+        if(!this.head){
+            return;
+        };
+
+        if(this.head.data === data){
+            this.head = this.head.next;
+            return;
+        };
+        let curr = this.head;
+        while(curr.next !== null){
+            if(curr.next.data === data){
+                curr.next = curr.next.next;
+                return;
+            }
+            curr = curr.next;
+        }
+    }
+
+    // search for element in linked list
+    serachElement(data){
+        let curr = this.head;
+        while(curr !== null){
+            if(curr.data === data){
+                return true;
+            }
+            curr = curr.next;
+        }
+        return false;
+    }
+
+
     // display the element of linked list
     printDispaly(){
         let curr = this.head;
@@ -48,4 +81,6 @@ linkedList.append(10);
 linkedList.append(20);
 linkedList.append(30);
 linkedList.prepend(5);
+linkedList.deleteNode(20);
 linkedList.printDispaly();
+console.log(linkedList.serachElement(300))
