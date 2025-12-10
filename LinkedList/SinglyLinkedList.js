@@ -24,6 +24,13 @@ class LinkedList{
         }
     }
 
+    // Insert a node at the begining
+    prepend(data){
+        const newNode = new Node(data);
+        newNode.next = this.head;
+        this.head = newNode;
+    }
+
     // display the element of linked list
     printDispaly(){
         let curr = this.head;
@@ -40,4 +47,5 @@ const linkedList = new LinkedList();
 linkedList.append(10);
 linkedList.append(20);
 linkedList.append(30);
+linkedList.prepend(5);
 linkedList.printDispaly();
