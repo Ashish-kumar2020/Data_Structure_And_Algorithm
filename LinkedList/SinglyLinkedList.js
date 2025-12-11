@@ -83,4 +83,12 @@ linkedList.append(30);
 linkedList.prepend(5);
 linkedList.deleteNode(20);
 linkedList.printDispaly();
-console.log(linkedList.serachElement(300))
+console.log(linkedList.serachElement(300));
+
+
+// Complexity Analysis
+/*
+    1 - Insertion/deletion at the begining = O(1)
+    2 - Insertion and deletion at the end = O(n)
+    3 - search a element = O(n)
+*/
